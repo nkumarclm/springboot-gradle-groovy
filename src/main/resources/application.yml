@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: info, health, prometheus, metrics, threaddump, heapdump, env, liquibase
